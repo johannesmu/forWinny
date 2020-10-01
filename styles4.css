@@ -1,0 +1,179 @@
+/* CSS variables / custom properties */
+:root {
+    /* shortcut to change font once, instead of type in everytime */
+    --sans-serif-font: 'PT Sans', sans-serif
+  }
+  
+  
+  html,body{
+      min-height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+
+  body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    background-image: url("assets/Slide/Slide-1-Dark.jpg");
+    /* Unknown - Bing.com, (2020), Human Eye Creative Blue Background [ONLINE]. 
+    Available at: https://besthqwallpapers.com/download/original/37260 
+    [Accessed 4 September 2020]. */
+    
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--sans-serif-font)
+  }
+  
+  .header{
+      position: absolute;
+      min-width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      z-index: 9999;
+  }
+  
+  
+  .logo{
+      max-width: 80px;
+      padding: 4em;
+  }
+  
+main{
+background-color: rgb(0,0,0,0.7);
+height: 80vh;
+margin-top: 22vh;
+margin-bottom: 10vh;
+margin-left: 10vh;
+margin-right: 10vh;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-gap: 20px;
+place-items: auto center; 
+position: relative;
+}
+    
+
+.left{
+/* Loydence Group, (2020), Unknown [ONLINE]. Available at: 
+http://www.loydencegroup.com/loydence-printing.html 
+[Accessed 21 September 2020]. */
+    background-image: url("Assets/Services/print.jpg");
+    background-size: 100%;
+    margin-top: 5em;
+    margin-left: 2em;
+    display: grid;
+    place-items: center;
+    grid-column: span 6;
+    max-height: 50vh;
+    color: white;
+    font-size: larger;
+  }
+
+  .left h1 a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .left h1 a:hover{
+    color: #03beff; 
+  }
+
+
+
+.right{
+    /* Atelierdosul, (2020), Unknown [ONLINE]. Available at: 
+    https://atelierdosul.com/services/web-design/ [Accessed 
+    21 September 2020]. */
+  background-image: url("Assets/Services/digital.jpg");
+  background-size: 100%;
+  margin-top: 5em;
+  margin-right: 2em;
+  display: grid;
+  place-items: center;
+  grid-column: span 6;
+  max-height: 50vh;
+  color:black;
+  font-size: larger;
+}
+
+  .navigation {
+      display: flex;
+      padding-top: 3em;
+      padding-right: 3em;
+      justify-self: end;
+      font-family: var(--sans-serif-font);  
+      
+  }
+  
+  .navigation a{
+      padding: 2em;
+      color: #ffffff;
+      text-decoration: none;
+  }
+  
+  .navigation a:hover{
+      color: #03beff; 
+  }
+  
+  
+  .navigation a:active{
+      color: #03beff;
+  }
+  
+      
+    #footer {
+      background-color: #141414;
+      max-height: 40vh;
+      
+    }
+  
+    .twitter{
+      padding-top: 4.5em;
+      padding-left: 4em;
+      max-width: 3em;
+      position: relative;
+      z-index: 1;
+    float: left;
+    }
+  
+    .instagram{
+      padding-top: 4.5em;
+      padding-left: 4em;
+      max-width: 3em;
+      position: relative;
+      z-index: 1;
+  float: left;
+    }
+  
+    .facebook{
+      padding-top: 4.5em;
+      padding-left: 4em;
+      max-width: 3em;
+      position: relative;
+      z-index: 1;
+  float: left;
+   }
+  
+   .instagram a:hover{
+    color: #03beff; 
+  }
+  
+  
+  
+  
+    .footer-right{
+    padding: 3em;
+  
+    max-width: 20em;
+    float: right;
+     
+    }
+  
+

@@ -1,0 +1,177 @@
+/* CSS variables / custom properties */
+:root {
+    /* shortcut to change font once, instead of type in everytime */
+    --sans-serif-font: 'PT Sans', sans-serif
+  }
+  
+  
+  html,body{
+      min-height: 100vh;
+  }
+  
+  body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #353535;
+    font-family: var(--sans-serif-font)
+  }
+  
+  .header{
+      position: absolute;
+      min-width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      z-index: 9999;
+  }
+  
+  
+  .logo{
+      max-width: 80px;
+      padding: 4em;
+  }
+  
+  .slogan{
+    padding-top: 4em;
+    padding-left: 2em;
+     font-family: 'PT Sans';
+     font-weight: 700;
+     color: #ffffff;
+  
+  
+  }
+  
+  .navbutton{
+  background-image: url('Assets/Icons/hamburger-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border-color: transparent;
+  }
+  
+  .navigation {
+   
+      display: flex;
+      padding-top: 3em;
+      padding-right: 3em;
+      justify-self: end;
+      font-family: var(--sans-serif-font);  
+  }
+  
+  .navigation a{
+      padding: 2em;
+      color: #ffffff;
+      text-decoration: none;
+  }
+  
+  .navigation a:hover{
+      color: #03beff; 
+  }
+  
+  .navigation a:visited{
+      color: white;
+  }
+  
+  .navigation a:active{
+      color: #03beff;
+  }
+  
+  
+  
+    .slide {
+      min-height: 90vh;
+      min-width: 100%;
+    }
+    
+    .one {
+      background-image: url("assets/Slide/Slide-1.jpg");
+      background-size: 100%;
+    }
+    
+    .two{
+      background-image: url("assets/Slide/Slide-2.jpg");
+      background-size: 100%;
+    }
+    
+    .three {
+      background-image: url("assets/Slide/Slide-3.jpg");
+      background-size: 100%;
+    }
+    .four {
+      background-image: url("assets/Slide/Slide-4.jpg");
+      background-size: 100%;
+    }
+  
+    
+    #footer {
+      background-color: #141414;
+      max-height: 40vh;
+      
+    }
+  
+    .twitter{
+      padding-top: 4.5em;
+      padding-left: 4em;
+      max-width: 3em;
+      position: relative;
+      z-index: 1;
+    float: left;
+    }
+  
+    .instagram{
+      padding-top: 4.5em;
+      padding-left: 4em;
+      max-width: 3em;
+      position: relative;
+      z-index: 1;
+  float: left;
+    }
+  
+    .facebook{
+      padding-top: 4.5em;
+      padding-left: 4em;
+      max-width: 3em;
+      position: relative;
+      z-index: 1;
+  float: left;
+   }
+  
+   .instagram a:hover{
+    color: #03beff; 
+  }
+  
+  
+  
+  
+    .footer-right{
+    padding: 3em;
+  
+    max-width: 20em;
+    float: right;
+     
+    }
+  
+  
+    /* position dots in carousel */
+  .flickity-page-dots {
+    float: right;
+    top: 2em;
+    transform: rotate(90deg)
+  }
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+  
+  }
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: white;
+  }
+  
+  

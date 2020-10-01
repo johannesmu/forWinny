@@ -1,0 +1,199 @@
+/* CSS variables / custom properties */
+:root {
+  /* shortcut to change font once, instead of type in everytime */
+  --sans-serif-font: 'PT Sans', sans-serif
+}
+
+
+html,body{
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+body{
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #353535;
+  font-family: var(--sans-serif-font)
+}
+
+.header{
+    position: absolute;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    z-index: 9999;
+}
+
+
+.logo{
+    max-width: 80px;
+    padding: 4em;
+}
+
+.slogan{
+  padding-top: 11em;
+  padding-left: 2em;
+   font-family: 'PT Sans';
+   font-size: 2.5em;
+   font-weight: 700;
+   color: #ffffff;
+}
+
+.navbutton {
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border-color: transparent;
+  margin: 1em;
+  display: none;
+}
+
+
+.stripe {
+  border: 1px solid white;
+  width: 80%;
+}
+
+.navigation {
+ 
+    display: flex;
+    padding-top: 3em;
+    padding-right: 3em;
+    justify-self: end;
+    font-family: var(--sans-serif-font);  
+}
+
+.navigation a{
+    padding: 2em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    color: #03beff; 
+}
+
+
+.navigation a:active{
+    color: #03beff;
+}
+
+
+
+  .slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  
+  /* Unknown - Bing.com, (2020), Human Eye Creative Blue Background [ONLINE]. 
+  Available at: https://besthqwallpapers.com/download/original/37260 
+  [Accessed 27 August 2020]. */
+  .one {
+    background-image: url("assets/Slide/Slide-1.jpg");
+ 
+  }
+  
+  /* Unknown - Bing.com, (2017), Miami Trees Triangle Neon Artwork 4k [ONLINE]. 
+  Available at: https://hdqwalls.com/miami-trees-triangle-neon-artwork-4k-wallpaper
+  [Accessed 4 September 2020]. */
+  .two{
+    background-image: url("assets/Slide/Slide-2.jpg");
+ 
+  }
+  
+  /* Unknown - Bing.com, (2020), Neon Astronaut [ONLINE]. Available at: 
+  https://www.wallpaperflare.com/artwork-digital-art-neon-astronaut-
+  monolith-beeple-men-wallpaper-cupmm [Accessed 4 September 2020]. */
+  .three {
+    background-image: url("assets/Slide/Slide-3.jpg");
+
+  }
+
+  /* Martina Seketa, (2018), Neon [ONLINE]. Available at: 
+  https://pixels.com/featured/neon-martina-seketa.html 
+  [Accessed 4 September 2020]. */
+  .four {
+    background-image: url("assets/Slide/Slide-4.jpg");
+
+  }
+
+  
+  #footer {
+    background-color: #141414;
+    max-height: 40vh;
+    
+  }
+
+  .twitter{
+    padding-top: 4.5em;
+    padding-left: 4em;
+    max-width: 3em;
+    position: relative;
+    z-index: 1;
+  float: left;
+  }
+
+  .instagram{
+    padding-top: 4.5em;
+    padding-left: 4em;
+    max-width: 3em;
+    position: relative;
+    z-index: 1;
+float: left;
+  }
+
+  .facebook{
+    padding-top: 4.5em;
+    padding-left: 4em;
+    max-width: 3em;
+    position: relative;
+    z-index: 1;
+float: left;
+ }
+
+ .instagram a:hover{
+  color: #03beff; 
+}
+
+
+
+
+  .footer-right{
+  padding: 3em;
+
+  max-width: 20em;
+  float: right;
+   
+  }
+
+
+  /* position dots in carousel */
+.flickity-page-dots {
+  position: absolute;
+  right: 1em;
+  top: 2em;
+  transform: rotate(90deg)
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
